@@ -7,4 +7,3 @@ tests/UnitTest_*
 *.o
 *.dSYM/
 .DS_Store
-.vscode/

@@ -10,8 +10,8 @@
 
 using namespace std;
 
-// Функція пошуку індексу третьої за порядком коми (ітераційний спосіб)
-int FindThirdComma(const char* str)
+// Функція пошуку індексу третьої за порядком коми
+int FindThirdComma(const char *str)
 {
     int count = 0;
     for (int i = 0; str[i] != '\0'; i++)
@@ -26,12 +26,12 @@ int FindThirdComma(const char* str)
     return -1;
 }
 
-// Функція заміни кожної коми парою зірочок "**" (ітераційний спосіб)
-char* Change(char* str)
+// Функція заміни кожної коми парою зірочок "**"
+char *Change(char *str)
 {
     size_t len = strlen(str);
-    char* tmp = new char[len * 2 + 1];
-    char* t = tmp;
+    char *tmp = new char[len * 2 + 1];
+    char *t = tmp;
     tmp[0] = '\0';
 
     size_t i = 0;
@@ -67,7 +67,7 @@ int main()
     else
         cout << "Third comma not found (less than 3 commas)" << endl;
 
-    char* dest = Change(str);
+    char *dest = Change(str);
 
     cout << "Modified string (param) : " << str << endl;
     cout << "Modified string (result): " << dest << endl;
