@@ -1,0 +1,10 @@
+# Build outputs
+Lab_*
+!Lab_*.cpp
+tests/UnitTest_*
+!tests/UnitTest_*.cpp
+!tests/doctest.h
+*.o
+*.dSYM/
+.DS_Store
+.vscode/
